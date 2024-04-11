@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+  {{> menu}}
+  <h1>Dashboard</h1>
+  <ul>
+    {{#each data}}
+      <li><a href="/producto/{{this.nombre}}">{{this.nombre}}</a></li>
+    {{/each}}
+  </ul>
+</body>
+</html>
